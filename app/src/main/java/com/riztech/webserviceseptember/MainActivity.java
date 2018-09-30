@@ -28,11 +28,17 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void viewEmployee(View view) {
+        Intent intent=new Intent(this,GetAllEmployeeActivity.class);
+        startActivity(intent);
     }
 
     public void updateEmployee(View view) {
+        Intent intent = new Intent(this, UpdateEmployeeActivity.class);
+        startActivity(intent);
     }
 
     public void deleteEmployee(View view) {
+        Intent intent =new Intent(getApplicationContext(),SearchActivity.class);
+        startActivity(intent);
     }
 }
